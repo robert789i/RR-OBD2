@@ -1,0 +1,17 @@
+{
+  "vehicles": [
+    {
+      "id": "54374cf1",
+      "brand": "KIA",
+      "model": "Forte",
+      "year": 2016
+    },
+    {
+      "id": "346f8797",
+      "brand": "Volkswagen",
+      "model": "a",
+      "year": 2014
+    }
+  ],
+  "active_vehicle_id": "346f8797"
+}

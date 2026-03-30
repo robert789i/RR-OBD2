@@ -1,0 +1,253 @@
+/* ═══════════════════════════════════════════════════
+   RR-Engineer — Professional Dark Theme
+   ═══════════════════════════════════════════════════ */
+
+/* GLOBAL */
+QMainWindow, QWidget {
+    background-color: #121212;
+    color: #e0e0e0;
+    font-family: 'Segoe UI';
+}
+
+/* ─── SIDEBAR ─────────────────────────────────────── */
+QListWidget#Sidebar {
+    background-color: #0d0d0d;
+    border: none;
+    border-right: 1px solid #1e1e1e;
+    color: #888;
+    font-size: 13px;
+    outline: none;
+    padding: 8px 0;
+}
+QListWidget#Sidebar::item {
+    padding: 13px 22px;
+    border-left: 3px solid transparent;
+    margin: 1px 0;
+    border-radius: 0;
+}
+QListWidget#Sidebar::item:hover {
+    background-color: #1a1a2e;
+    color: #00e5ff;
+    border-left: 3px solid #007acc;
+}
+QListWidget#Sidebar::item:selected {
+    background-color: #162032;
+    color: #00e5ff;
+    border-left: 3px solid #00aaff;
+    font-weight: bold;
+}
+
+/* ─── HEADER ──────────────────────────────────────── */
+QFrame#HeaderFrame {
+    background-color: #1a1a1a;
+    border-radius: 10px;
+    border: 1px solid #2a2a2a;
+}
+
+/* ─── BUTTONS ─────────────────────────────────────── */
+QPushButton {
+    background-color: #252525;
+    color: #d0d0d0;
+    border: 1px solid #383838;
+    padding: 7px 16px;
+    border-radius: 7px;
+    font-weight: bold;
+    font-size: 12px;
+    min-height: 30px;
+}
+QPushButton:hover {
+    background-color: #007acc;
+    border-color: #00aaff;
+    color: white;
+}
+QPushButton:pressed {
+    background-color: #005f99;
+}
+QPushButton:disabled {
+    background-color: #1a1a1a;
+    color: #444;
+    border-color: #252525;
+}
+
+/* Connect / Disconnect special buttons */
+QPushButton#ConnectButton {
+    background-color: #1a3a1a;
+    border-color: #2a6a2a;
+    color: #00e676;
+    min-width: 120px;
+}
+QPushButton#ConnectButton:hover {
+    background-color: #2a7a2a;
+    color: white;
+}
+
+/* ─── METRIC CARDS ────────────────────────────────── */
+QFrame#MetricCard {
+    background-color: #1a1a2e;
+    border: 1px solid #252545;
+    border-radius: 10px;
+}
+QFrame#MetricCard:hover {
+    border-color: #007acc;
+}
+QLabel#MetricTitle {
+    font-size: 10px;
+    color: #777;
+    font-weight: 600;
+    letter-spacing: 1px;
+}
+QLabel#MetricValue {
+    font-size: 30px;
+    color: #00e5ff;
+    font-weight: bold;
+}
+QLabel#MetricUnit {
+    font-size: 11px;
+    color: #555;
+}
+
+/* ─── TABLES ──────────────────────────────────────── */
+QTableWidget {
+    background-color: #161616;
+    gridline-color: #252525;
+    color: #ccc;
+    border: none;
+    font-size: 13px;
+    selection-background-color: #162032;
+    selection-color: #00e5ff;
+}
+QHeaderView::section {
+    background-color: #1e1e30;
+    color: #00aaff;
+    padding: 10px 8px;
+    border: none;
+    font-weight: bold;
+    font-size: 12px;
+    border-bottom: 1px solid #252540;
+}
+QTableWidget::item {
+    padding: 6px;
+}
+QTableWidget::item:selected {
+    background-color: #162032;
+    color: #00e5ff;
+}
+
+/* ─── TEXT EDIT (LOG) ─────────────────────────────── */
+QTextEdit {
+    background-color: #080808;
+    color: #00cc55;
+    font-family: 'Consolas';
+    border: 1px solid #1e1e1e;
+    border-radius: 6px;
+    font-size: 11px;
+    padding: 4px;
+}
+
+/* ─── COMBOBOX ────────────────────────────────────── */
+QComboBox {
+    background-color: #252525;
+    color: white;
+    border: 1px solid #383838;
+    padding: 5px 10px;
+    border-radius: 6px;
+    font-size: 12px;
+    min-height: 28px;
+}
+QComboBox:hover {
+    border-color: #007acc;
+}
+QComboBox::drop-down {
+    border: none;
+    width: 22px;
+}
+QComboBox QAbstractItemView {
+    background-color: #252525;
+    color: white;
+    selection-background-color: #007acc;
+    border: 1px solid #444;
+    padding: 3px;
+}
+
+/* ─── SPIN BOX ────────────────────────────────────── */
+QSpinBox {
+    background-color: #252525;
+    color: white;
+    border: 1px solid #383838;
+    padding: 5px 8px;
+    border-radius: 6px;
+    font-size: 13px;
+}
+QSpinBox:hover, QSpinBox:focus {
+    border-color: #007acc;
+}
+QSpinBox::up-button, QSpinBox::down-button {
+    background-color: #333;
+    border: none;
+    width: 18px;
+}
+QSpinBox::up-button:hover, QSpinBox::down-button:hover {
+    background-color: #007acc;
+}
+
+/* ─── LINE EDIT ───────────────────────────────────── */
+QLineEdit {
+    background-color: #252525;
+    color: white;
+    border: 1px solid #383838;
+    padding: 7px 10px;
+    border-radius: 6px;
+    font-size: 13px;
+}
+QLineEdit:hover, QLineEdit:focus {
+    border-color: #007acc;
+}
+
+/* ─── SCROLLBARS ──────────────────────────────────── */
+QScrollBar:vertical {
+    background-color: #111;
+    width: 7px;
+    border-radius: 3px;
+    margin: 0;
+}
+QScrollBar::handle:vertical {
+    background-color: #333;
+    border-radius: 3px;
+    min-height: 25px;
+}
+QScrollBar::handle:vertical:hover { background-color: #007acc; }
+QScrollBar::add-line:vertical, QScrollBar::sub-line:vertical { height: 0; }
+QScrollBar:horizontal {
+    background-color: #111;
+    height: 7px;
+    border-radius: 3px;
+}
+QScrollBar::handle:horizontal {
+    background-color: #333;
+    border-radius: 3px;
+    min-width: 25px;
+}
+QScrollBar::handle:horizontal:hover { background-color: #007acc; }
+QScrollBar::add-line:horizontal, QScrollBar::sub-line:horizontal { width: 0; }
+
+/* ─── DIALOGS ─────────────────────────────────────── */
+QDialog {
+    background-color: #141414;
+    color: #e0e0e0;
+    border: 1px solid #2a2a2a;
+    border-radius: 10px;
+}
+QMessageBox {
+    background-color: #1a1a1a;
+    color: #e0e0e0;
+}
+QMessageBox QPushButton {
+    min-width: 80px;
+    min-height: 32px;
+}
+
+/* ─── SCROLL AREA ─────────────────────────────────── */
+QScrollArea {
+    background: transparent;
+    border: none;
+}
